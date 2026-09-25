@@ -1118,19 +1118,29 @@ else:
         )
     else:
         try:
-              training_df = pd.read_csv(
-                StringIO(
-                    uploaded_training_file.getvalue().decode("utf-8-sig")
-                )
-            )   
-
-            slack_df = pd.read_csv(
-                StringIO(
-                    uploaded_slack_file.getvalue().decode("utf-8-sig")
-                )
+            # Read uploaded files from their bytes so the CSV parser
+            # does not depend on the upload object's current file position.
+            training_csv_text = uploaded_training_file.getvalue().decode(
+                "utf-8-sig"
+            )
+            slack_csv_text = uploaded_slack_file.getvalue().decode(
+                "utf-8-sig"
             )
 
+            if not training_csv_text.strip():
+                raise ValueError(
+                    "The training CSV is empty. Upload a CSV with "
+                    "message and category columns."
+                )
+            if not slack_csv_text.strip():
+                raise ValueError(
+                    "The Slack CSV is empty. Upload a CSV with a message column."
+                )
+
+            training_df = pd.read_csv(StringIO(training_csv_text))
+            slack_df = pd.read_csv(StringIO(slack_csv_text))
             model, training_data = train_slack_model(training_df)
+
             if "message" not in slack_df.columns:
                 st.error("Slack CSV must contain a message column.")
             else:
