@@ -1,0 +1,22 @@
+message,category
+"Can someone help? The integration is blocked.",Blocker
+"We cannot proceed until the API issue is fixed.",Blocker
+"The team is waiting for access to the client account.",Blocker
+"We may miss the delivery deadline.",Delivery concern
+"The migration is taking longer than expected.",Delivery concern
+"We are running behind the project timeline.",Delivery concern
+"The client has requested an additional feature.",Scope change
+"They want to add two more workflows to the project.",Scope change
+"The requirements have changed since approval.",Scope change
+"We need this completed urgently today.",Urgency
+"Please prioritize this before the client meeting.",Urgency
+"This needs immediate attention.",Urgency
+"The client is unhappy with the latest delivery.",Negative feedback
+"The dashboard does not meet the agreed requirements.",Negative feedback
+"The client raised concerns about the quality.",Negative feedback
+"The client approved the final dashboard.",Positive feedback
+"The client is happy with the progress so far.",Positive feedback
+"Great work, the new workflow looks good.",Positive feedback
+"Today's project meeting is at 3 PM.",Neutral
+"The team shared the weekly status report.",Neutral
+"We reviewed the project plan this morning.",Neutral
