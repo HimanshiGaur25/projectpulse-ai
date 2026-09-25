@@ -1118,10 +1118,19 @@ else:
         )
     else:
         try:
-            training_df = pd.read_csv(uploaded_training_file)
-            slack_df = pd.read_csv(uploaded_slack_file)
-            model, training_data = train_slack_model(training_df)
+              training_df = pd.read_csv(
+                StringIO(
+                    uploaded_training_file.getvalue().decode("utf-8-sig")
+                )
+            )   
 
+            slack_df = pd.read_csv(
+                StringIO(
+                    uploaded_slack_file.getvalue().decode("utf-8-sig")
+                )
+            )
+
+            model, training_data = train_slack_model(training_df)
             if "message" not in slack_df.columns:
                 st.error("Slack CSV must contain a message column.")
             else:
