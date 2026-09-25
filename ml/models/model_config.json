@@ -1,0 +1,6 @@
+{
+    "threshold": 0.2,
+    "model_type": "TF-IDF + OneVsRest Logistic Regression",
+    "task": "multi-label emotion classification",
+    "selection_basis": "Highest validation micro F1 among tested thresholds"
+}

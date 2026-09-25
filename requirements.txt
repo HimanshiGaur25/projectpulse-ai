@@ -5,3 +5,8 @@ plotly
 requests
 python-dotenv
 scikit-learn
+streamlit
+pandas
+plotly
+scikit-learn
+joblib
