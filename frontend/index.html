@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ProjectPulse AI</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/styles.css"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">P</div>
+
+            <div>
+                <div class="logo-title">ProjectPulse</div>
+                <div class="logo-subtitle">AI</div>
+            </div>
+        </div>
+
+        <nav>
+
+            <button class="nav-item active">
+                <span>⌂</span>
+                Overview
+            </button>
+
+            <button class="nav-item">
+                <span>◈</span>
+                Projects
+            </button>
+
+            <button class="nav-item">
+                <span>◉</span>
+                Slack Insights
+            </button>
+
+            <button class="nav-item">
+                <span>✦</span>
+                Emotion Analysis
+            </button>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <span class="status-dot"></span>
+            AI Engine Ready
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <p class="eyebrow">PROJECT INTELLIGENCE</p>
+
+                <h1>
+                    Project Overview
+                </h1>
+
+                <p class="subtitle">
+                    Monitor project health, team signals and risks.
+                </p>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="secondary-button">
+                    Upload Data
+                </button>
+
+                <button class="primary-button">
+                    Analyze
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-label">
+                    Total Projects
+                </span>
+
+                <strong id="total-projects">
+                    —
+                </strong>
+
+                <span class="stat-description">
+                    Projects being monitored
+                </span>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-label">
+                    Healthy
+                </span>
+
+                <strong id="healthy-projects">
+                    —
+                </strong>
+
+                <span class="stat-description">
+                    Projects on track
+                </span>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-label">
+                    At Risk
+                </span>
+
+                <strong id="risk-projects">
+                    —
+                </strong>
+
+                <span class="stat-description">
+                    Need attention
+                </span>
+            </div>
+
+
+            <div class="stat-card">
+                <span class="stat-label">
+                    Critical
+                </span>
+
+                <strong id="critical-projects">
+                    —
+                </strong>
+
+                <span class="stat-description">
+                    Require immediate action
+                </span>
+            </div>
+
+        </section>
+
+
+        <section class="content-grid">
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Project Health</h2>
+
+                        <p>
+                            Current portfolio health signals
+                        </p>
+                    </div>
+
+                    <button class="text-button">
+                        View all
+                    </button>
+
+                </div>
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        No project data yet
+                    </h3>
+
+                    <p>
+                        Upload a project CSV to start analyzing
+                        project health.
+                    </p>
+
+                    <button class="primary-button">
+                        Upload CSV
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>AI Signals</h2>
+
+                        <p>
+                            Latest detected signals
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="signal-list">
+
+                    <div class="signal">
+                        <span class="signal-indicator"></span>
+
+                        <div>
+                            <strong>
+                                Project health
+                            </strong>
+
+                            <p>
+                                Waiting for project data
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="signal">
+                        <span class="signal-indicator"></span>
+
+                        <div>
+                            <strong>
+                                Slack sentiment
+                            </strong>
+
+                            <p>
+                                Waiting for Slack data
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="signal">
+                        <span class="signal-indicator"></span>
+
+                        <div>
+                            <strong>
+                                Emotion analysis
+                            </strong>
+
+                            <p>
+                                Model ready
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>
