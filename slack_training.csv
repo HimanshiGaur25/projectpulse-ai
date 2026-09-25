@@ -1,22 +1,22 @@
 message,category
 "Can someone help? The integration is blocked.",Blocker
 "We cannot proceed until the API issue is fixed.",Blocker
-"The team is waiting for access to the client account.",Blocker
-"We may miss the delivery deadline.",Delivery concern
-"The migration is taking longer than expected.",Delivery concern
-"We are running behind the project timeline.",Delivery concern
+"The project is stuck because we are waiting for access.",Blocker
+"We may miss the deadline if this continues.",Delivery concern
+"The development work is taking longer than expected.",Delivery concern
+"We are behind schedule on the current milestone.",Delivery concern
 "The client has requested an additional feature.",Scope change
-"They want to add two more workflows to the project.",Scope change
-"The requirements have changed since approval.",Scope change
-"We need this completed urgently today.",Urgency
-"Please prioritize this before the client meeting.",Urgency
-"This needs immediate attention.",Urgency
+"Can we add another workflow to the agreed scope?",Scope change
+"The requirements have changed since kickoff.",Scope change
+"We need this fixed urgently before tomorrow.",Urgency
+"Please prioritize this issue today.",Urgency
+"This needs immediate attention from the team.",Urgency
 "The client is unhappy with the latest delivery.",Negative feedback
-"The dashboard does not meet the agreed requirements.",Negative feedback
-"The client raised concerns about the quality.",Negative feedback
-"The client approved the final dashboard.",Positive feedback
-"The client is happy with the progress so far.",Positive feedback
-"Great work, the new workflow looks good.",Positive feedback
-"Today's project meeting is at 3 PM.",Neutral
-"The team shared the weekly status report.",Neutral
-"We reviewed the project plan this morning.",Neutral
+"The results do not meet our expectations.",Negative feedback
+"We are disappointed with the progress so far.",Negative feedback
+"Thanks, the new dashboard looks great.",Positive feedback
+"The client is happy with the delivery.",Positive feedback
+"Great work, the team really appreciates it.",Positive feedback
+"The project meeting is scheduled for Thursday.",Neutral
+"I shared the project update with the team.",Neutral
+"We will review the document in our next meeting.",Neutral
